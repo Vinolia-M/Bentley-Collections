@@ -1,0 +1,18 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  margin: 0 120px;
+  padding: 0 2rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  #app {position: static;width: auto;}
+}
