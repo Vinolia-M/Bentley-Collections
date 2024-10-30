@@ -85,10 +85,11 @@ onMounted(() => {
 
 <style scoped>
 .body-content {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -196,12 +197,24 @@ h2 {
 }
 
 @media screen and (max-width:1024px) {
-  .content {
-    flex-direction: column;
-    gap: 55px;
-}
-
+  .content {flex-direction: column;gap: 55px;}
 .inner-contents {width: 100%;}
 .right-content {width: 100%;}
+}
+
+@media screen and (max-width:991px) {
+  .content {margin: 0;}
+}
+
+@media screen and (max-width: 560px) {
+  h1 {font-size: 60px;}
+}
+
+@media screen and (max-width:510px) {
+  .navigation-buttons {
+    bottom: 13%;
+    justify-content: center;
+    width: 85%;
+}
 }
 </style>

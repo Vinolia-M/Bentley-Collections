@@ -14,7 +14,7 @@
 
 <style scoped>
 .item {
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 9%;
   z-index: -1;
@@ -35,6 +35,10 @@ h3 {
   font-weight: 500;
 }
 
-@media (min-width: 1024px) {
+@media screen and (max-width: 510px) {
+  .item {
+    justify-content: center;
+    width: 80%;
+}
 }
 </style>

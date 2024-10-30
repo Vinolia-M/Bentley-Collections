@@ -75,6 +75,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 170px;
+  padding-left: 14px;
 }
 
 .humburger {
@@ -123,11 +124,20 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  list-style-type: none;
   font-size: 30px;
+  padding: 0;
 }
 
-.humburger-contents li {
-  color: #fff;
+.humburger-contents li {color: #fff;}
+
+@media screen and (max-width:991px) {
+  .products-x-humburger {gap: 50px;}
+}
+
+@media screen and (max-width:425px) {
+  h1 {font-size: 20px;}
+  h3 {font-size: 14px;}
+  .line {min-width: 38px;}
+  .products-x-humburger {gap: 32px;}
 }
 </style>
